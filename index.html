@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Montesano</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.toast.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<div class="container">
+    <br>
+
+    <div class="right-tabs clearfix">
+        <div class="navbar-brand">
+            Montesano
+        </div>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                    aria-selected="true">Incidencias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+                    aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">Contact</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent" style="width: 100%">
+            <br>
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1 class="display-4">Incidencias</h1>
+                            <p class="lead">Utilice el siguiente formulario para crear una incidencia.</p>
+                            <!-- <hr class="my-4"> -->
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label for="incidenciasNombre">Nombre (*)</label>
+                            <input type="text" class="form-control" id="incidenciasNombre" placeholder="Juan">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="incidenciasApellido">Apellido (*)</label>
+                            <input type="text" class="form-control" id="incidenciasApellido" placeholder="Perez">
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="incidenciasTitulo">Titulo (*)</label>
+                            <input type="email" class="form-control" id="incidenciasTitulo" placeholder="No funciona la navegacion de la pagina principal">
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label for="incidenciasDescripcion">Descripción</label>
+                            <textarea class="form-control" id="incidenciasDescripcion" rows="10" placeholder="No carga el sistema"></textarea>
+
+                            <div id="formdata-example">
+                                <h2>
+                                  Using Forms
+                                </h2>
+                                <form>
+                                  <label for="token">File:</label>
+                                  <input type="file" id="file">
+                                  <input type="submit" id="submit">
+                                </form>
+                              </div>
+
+                            <br>
+                            <p class="lead">Los campos con asterisco son requeridos.</p>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="row ">
+                        <div class="col-12" style="text-align: right">
+                            <button type="button" class="btn btn-warning" onclick="incidenciasLimpiar()">Limpiar</button>
+                            <button type="button" class="btn btn-primary" onclick="incidenciasCrear()">Crear</button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in
+                cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit
+                consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing
+                labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in
+                cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit
+                consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing
+                labore officia magna elit nisi in aute tempor commodo eiusmod.</div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="js/jquery.toast.min.js"></script>
+<script src="https://api.trello.com/1/client.js?key=151bcd104f1742fdcf0b8c2f4a4c8764"></script>
+
+
+<script src="js/incidencias.js"></script>
+
+</html>
