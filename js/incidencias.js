@@ -54,7 +54,7 @@ $(function () {
         if (myFiles.length < 1) {
             console.log("You haven't added a file so we're using a default one.");
             var oReq = new XMLHttpRequest();
-            oReq.open("GET", "https://invyasiel.github.io/montesano-app/", true);
+            oReq.open("GET", "https://invyasiel.github.io/prueba2/", true);
             oReq.responseType = "blob";
             oReq.onload = function (oEvent) {
                 // Once we've successfully received the default image, send it to Trello!
